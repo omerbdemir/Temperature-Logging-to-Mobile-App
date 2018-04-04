@@ -1,0 +1,6 @@
+public class DbStrings {
+    static final String DATABASE_URL = "MySQL server";
+    static final String DATABASE_NAME = "database_name";
+    static final String USERNAME = "username";
+    static final String PASSWORD = "password";
+}
