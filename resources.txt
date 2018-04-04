@@ -1,0 +1,11 @@
+https://www.raspberrypi.org/ 
+https://stackoverflow.com/ //Been useful in general
+http://www.circuitbasics.com/ //Setting up the circuit and the codes needed
+https://github.com/adafruit/Adafruit_Python_DHT //DHT11 library
+https://www.youtube.com/watch?v=bu5Y3uZ6LLM //Connecting an android app to a MySQL database
+https://www.androidauthority.com/first-android-app-what-you-need-to-know-619260/ //To learn android studio basics
+https://pimylifeup.com/raspberry-pi-nginx/ //nginx and php7.0 configuration
+https://developer.mozilla.org/en-US/docs/Learn/ //Basic information about internet structure
+http://www.steves-internet-guide.com/ //General understanding of internet and internet protocols
+https://github.com/HQarroum/awesome-iot
+https://www.freemysqlhosting.net/account/ //MySQL server host
