@@ -1,0 +1,30 @@
+import sys
+import Adafruit_DHT
+import os
+import time 
+import datetime
+import glob
+import MySQLdb
+from time import strftime
+
+db = MySQLdb.connect(host="server", user="user", passwd="password", db="database_name")
+cur = db.cursor()
+
+for x in range(i):
+	humidity, temperature = Adafruit_DHT.read_retry(11,pin_number)
+	
+	print 'Temp: {0:0.1f} C Humidity: {0:0.1f} %'.format(temperature, humidity)
+	sql = ("""INSERT INTO table_name (Temperature, Humidity) VALUES(%s,%s)""", (temperature,humidity))
+	
+	try:
+		print "writing database"7
+		cur.execute(*sql)
+		db.commit()
+		print "Writing complete"
+		time.sleep(1)
+	except:
+		db.rollback
+		print "failed"
+		cur.close()
+		db.close()
+		break
